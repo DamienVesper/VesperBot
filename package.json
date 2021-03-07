@@ -4,8 +4,8 @@
   "description": "A discord bot for DamienVesper's discord server.",
   "main": "index.js",
   "scripts": {
-    "prod": "pm2 start index.js",
-    "dev": "node index.js",
+    "prod": "pm2 start ./src/index.js",
+    "dev": "node ./src/index.js",
     "dev:lint": "eslint . --fix --ext .js"
   },
   "repository": {
@@ -25,7 +25,8 @@
   "homepage": "https://github.com/DamienVesper/VesperBot#readme",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "mongoose": "^5.11.19"
   },
   "devDependencies": {
     "@babel/core": "^7.13.8",
