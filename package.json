@@ -4,8 +4,9 @@
   "description": "A discord bot for DamienVesper's discord server.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "prod": "pm2 start index.js",
+    "dev": "node index.js",
+    "dev:lint": "eslint . --fix --ext .js"
   },
   "repository": {
     "type": "git",
