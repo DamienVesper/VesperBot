@@ -1,33 +1,35 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
-  "name": "hello-sqlite",
+  "name": "vesperbot",
   "version": "0.0.1",
-  "description": "A simple Node app with SQLite as a database management system, instantly up and running.",
-  "main": "server.js",
+  "description": "A discord bot for DamienVesper's discord server.",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "dependencies": {
-    "express": "^4.16.3",
-    "sqlite3": "^4.0.0",
-    "discord.js": "^11.5.1",
-    "fs": "^0.0.2",
-    "jsonstore.io": "^1.1.0",
-    "ytdl-core": "^1.0.0",
-    "events": "^3.0.0"
-  },
-  "engines": {
-    "node": "8.x"
-  },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-sqlite"
+    "type": "git",
+    "url": "git+https://github.com/DamienVesper/VesperBot.git"
   },
-  "license": "MIT",
   "keywords": [
-    "node",
-    "glitch",
-    "express"
-  ]
+    "discord",
+    "nodejs",
+    "bot"
+  ],
+  "author": "DamienVesper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamienVesper/VesperBot/issues"
+  },
+  "homepage": "https://github.com/DamienVesper/VesperBot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/eslint-parser": "^7.13.8",
+    "eslint": "^7.21.0",
+    "eslint-config-standard": "^16.0.2"
+  }
 }
